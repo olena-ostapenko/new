@@ -61,6 +61,9 @@ body {
   color: #333D4B;
   cursor: pointer;
 }
+.header__menu-btn {
+  display: none;
+}
 
 main {
   display: flex;

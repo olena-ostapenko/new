@@ -29,17 +29,19 @@ html {
 
 
 }
-.transit{
+
+.transit {
     font-family: 'Barlow';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 15px;
-            letter-spacing: 0.923077px;
-            text-transform: uppercase;
-            color: #83888F;
-            text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -74,20 +76,15 @@ $conteiner:1280px;
             color: #333D4B;
             cursor: pointer;
         }
-
-        // &-item {
-        //     font-family: 'Barlow';
-        //     font-style: normal;
-        //     font-weight: 700;
-        //     font-size: 12px;
-        //     line-height: 15px;
-        //     letter-spacing: 0.923077px;
-        //     text-transform: uppercase;
-        //     color: #83888F;
-        //     text-decoration: none;
-
-        // }
     }
+
+    &__menu-btn {
+
+        display: none;
+
+    }
+
+   
 }
 
 button {
@@ -116,6 +113,7 @@ main {
 
 
     .backround_conteiner {
+
         width: 100%;
         max-width: $conteiner;
         min-height: 600px;
@@ -125,6 +123,10 @@ main {
         background-position: 0px -531px;
         border-radius: 10px;
         padding: 117px 85px;
+
+        .tlo {
+            display: none;
+        }
 
         &__content {
 
@@ -425,6 +427,7 @@ main {
                 text-align: left;
                 color: #333D4B;
                 margin-bottom: 42px;
+                padding-right: 30px;
             }
 
             &-text_info {
@@ -465,21 +468,24 @@ main {
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
-   
-    &__nav {  
-  
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:103px; 
+
+    &__nav {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 103px;
+
         &-logo {
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between;
         }
-        &-logo_a{
+
+        &-logo_a {
             width: 236px;
             height: 26px;
         }
+
         &-item {
             display: flex;
             justify-content: space-between;
@@ -488,15 +494,16 @@ main {
             align-items: center;
 
         }
-        &-item_a:hover{
-            color:#FEFCF7
+
+        &-item_a:hover {
+            color: #FEFCF7;
         }
     }
 
     &__icon {
 
         &-nav {
-            
+
             display: flex;
             justify-content: space-between;
             flex-direction: row;
@@ -512,30 +519,169 @@ main {
             cursor: pointer;
 
         }
-       
+
 
         &-nav_facebook {
             background: url(./img/f.svg);
 
         }
-        &-nav_facebook:hover{
-            background-image: url(./img/f2.svg);}
+
+        &-nav_facebook:hover {
+            background-image: url(./img/f2.svg);
+        }
 
         &-nav_twitter {
             background: url(./img/t.svg);
-            }
-            &-nav_twitter:hover {
-                background-image: url(./img/t2.png);
+        }
+
+        &-nav_twitter:hover {
+            background-image: url(./img/t2.png);
         }
 
         &-nav_instagram {
             background: url(./img/i.svg);
-                  }
+        }
+
         &-nav_instagram:hover {
-            background-image: url(./img/i2.svg);}
+            background-image: url(./img/i2.svg);
+        }
     }
 
-    
 
 
 }
+
+
+
+// @media (max-width: 768px) {
+//     .header {
+//         max-width: 689px;
+//         padding-bottom: 53px;
+//         &__nav {
+//             gap: 32px;
+//         }
+
+//     }
+//     main { 
+//         max-width: 689px; 
+//         display: flex;
+//         align-items: center;
+
+//     }
+//     html{
+//         width: auto;
+//     }
+
+//     .our_collection {
+//         position: relative;
+//         top: 60px;}
+//     .collection_items {
+//         max-width:573px;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 32px;
+
+//     }
+//     .collection_items article img {
+//         width: 40%;
+//     }
+//     .collection {
+//         max-width: 689px;
+//         padding: 0;
+
+//     }
+//     .our_collection{
+//         max-width: 689px;
+
+//         font-size: 14vw;
+//         white-space: nowrap;
+
+
+//     }
+//     .collection_items>article {
+
+//         max-width: 573px;
+//         height: 193px;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         gap: 32px;
+//         width: 100%;
+
+//     }
+//     .collection_items>article>div>p, .collection_items>article>div>h2{
+//         text-align: left;
+//         width: 100%;
+//     }
+//     .ne_normale {
+//         padding: 11px 8px 5px 12px;
+
+
+
+//     }
+//     /* 777777777777777777 */
+// .main{
+
+// }
+//     .choose{
+//         max-width: 688px;
+//         max-height: 688px; 
+//           }
+//     .choose>article{
+
+//             padding-top: 56px;
+//             font-family:'Fraunces';
+//             font-size: 32px;
+
+//         }
+//     .choose>article>p{
+//             padding: 0 20px;
+//         }
+//     .green_box {
+//         max-width: 768px;
+//         display: flex;
+//         flex-direction: column;
+//         gap:24px;
+//         justify-content: center;
+//         position: relative;
+//         top: 10%
+//     } 
+//     .green {
+
+//         max-width: 768px;
+//         max-height: 180px;
+//         border-radius: 8px;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: flex-start;
+//         gap:56px;
+//         padding: 0 20px;
+//         }
+
+//         .green>div.text{
+//             max-width: 344px;
+//             max-height: 98px;
+
+//         }
+// .logo>img {
+//     padding: 10px;
+//     max-width: 55px;
+// }
+// .green>div.text>p{
+//     padding: 0;
+// }
+// .logo{
+//     padding: 0;
+//     /* padding: 0 0 0 70px; */
+// }
+// .green>div.text>p{
+//     width: auto;
+//     text-align: left;
+//     }
+//     .green>div.text>h2{
+//         text-align: left;
+//     }
+
+
+// }
